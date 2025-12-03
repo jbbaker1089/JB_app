@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Track
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>Vehicle</ion-label>
+    <ion-select placeholder="Select Vehicle" [(ngModel)]="selectedVehicleId">
+      <ion-select-option *ngFor="let v of vehicles">
+        {{ v.name }} ({{ v.model }})
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-card class="timer-card">
+    <ion-card-header>
+      <ion-card-title>Current Lap</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="timer-display">
+        <h1>{{ lapTimeDisplay }}</h1>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="buttons-container">
+    <ion-button expand="block" size="large" color="success" (click)="startTracking()" [disabled]="tracking">
+      Start Lap
+    </ion-button>
+
+    <ion-button expand="block" size="large" color="danger" (click)="stopTracking()" [disabled]="!tracking">
+      Stop Lap
+    </ion-button>
+
+    <ion-button expand="block" size="large" color="medium" (click)="resetLap()">
+      Reset
+    </ion-button>
+  </div>
+
+</ion-content>

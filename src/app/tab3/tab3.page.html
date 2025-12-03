@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Enter Vehicle Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Name Field -->
+      <ion-item>
+        <ion-label position="stacked">Vehicle Nickname</ion-label>
+        <ion-input [(ngModel)]="inputValue1" placeholder="Enter vehicle Nickname"></ion-input>
+      </ion-item>
+
+      <!-- Type Field -->
+      <ion-item>
+        <ion-label position="stacked">Vehicle Type</ion-label>
+        <ion-input [(ngModel)]="inputValue2" placeholder="Enter vehicle type (e.g., Car, Motorcycle)"></ion-input>
+      </ion-item>
+
+      <!-- Model Field -->
+      <ion-item>
+        <ion-label position="stacked">Vehicle Model</ion-label>
+        <ion-input [(ngModel)]="inputValue3" placeholder="Enter vehicle model"></ion-input>
+      </ion-item>
+
+      <!-- Year Field -->
+      <ion-item>
+        <ion-label position="stacked">Vehicle Year</ion-label>
+        <ion-input [(ngModel)]="inputValue4" type="number" placeholder="Enter vehicle year"></ion-input>
+      </ion-item>
+
+      <!-- Add Vehicle Button -->
+      <ion-button expand="full" (click)="addVehicle()">Add Vehicle</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

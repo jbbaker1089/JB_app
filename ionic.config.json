@@ -1,0 +1,7 @@
+{
+  "name": "lap-attack-2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

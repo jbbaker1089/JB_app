@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\guards",
+    "\\src\\app\\login",
+    "\\src\\app\\tab1",
+    "\\src\\app\\tabs",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\tab1\\tab1.page.html",
+  "PreviewInSolutionExplorer": false
+}
